@@ -21,16 +21,22 @@
     números do array criado acima. Mostre esse novo array no console.
     */
     console.log( '\nJust Numbers:' );
-    // ?
-
+    var justNumbers = numberObjects.map(function(i) {
+        return i.number;
+    });
+    console.log( justNumbers );
     /*
     Crie um novo array chamado `justMod2Or3`, que receberá do array criado acima
     somente os números que forem divisíveis por 2 ou 3. Mostre esse novo array
     no console.
     */
     console.log( '\nJust module of division by 2 or 3:' );
-    // ?
-
+    var justMod2Or3 = justNumbers.filter(function(i){
+        if(i % 2 === 0 || i % 3 === 0 ){
+            return i;       
+        }
+    });
+    console.log( justMod2Or3 );
     /*
     Declare uma variável chamada operation que receba, do array criado acima,
     um valor reduzido pela seguinte operação:
